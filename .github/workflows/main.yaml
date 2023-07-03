@@ -55,7 +55,7 @@
 name : github actions 
 on :
   push:
-    branches: [mai,master]
+    branches: [mai,aster]
 jobs: 
   build:
     runs-on: ubuntu-latest
