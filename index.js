@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", () => {
-  res.send({ msg: "welcome to cicd-class" });
+  res.send({ msg: "welcome to cicd-example " });
 });
 
 app.listen(4000, () => {
