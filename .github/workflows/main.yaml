@@ -1,0 +1,64 @@
+# # worlflow
+# # YAML - > YAML AIN'T A MARKUP LANGUAGE 
+
+# # READ AND UNDERSTAND SERIES OF STEPS AND OPERATIONS
+# # THIS CAN BE READY BY MACHINE TO AUTOMATE THE PROCESS OF DEP AND TASK
+
+# # KEY VALUE PAIR
+# ---
+# about:
+#   description: Human can interact there easily when they want.
+#   special: payAny time
+#   location: choose accordingly
+
+#   # strings /arrays/objects
+#   # ARRAYS THERE 
+# tags:
+#   - traval
+#   - world
+#   - india
+#   - usa
+#   - world tourism
+# # Objects 
+# address:
+#   street: MG ROAD
+#   city: Bangalore
+#   state: KA
+
+# # env variable and other var
+# value: ${{ process.env.port }}
+
+
+# # ---
+# # about:
+# #   description: Human can interact there easily when they want.
+# #   special: payAny time
+# #   location: choose accordingly
+# # tags:
+# #   - traval
+# #   - world
+# #   - india
+# #   - usa
+# #   - world tourism
+# # address:
+# #   street: MG ROAD
+# #   city: Bangalore
+# #   state: KA
+# # value: ${{ process.env.port }}
+
+# ==================================================================
+
+# Github 
+# triggered on certain events
+# push or pull pr request
+
+name : github actions 
+on :
+  push:
+    branches: [main,master]
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello world
+        run: echo "Hello World print here !"     
