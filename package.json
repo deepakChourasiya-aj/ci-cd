@@ -12,5 +12,8 @@
   "dependencies": {
     "express": "^4.18.2",
     "yaml-cli": "^1.1.8"
+  },
+  "devDependencies": {
+    "eslint": "^8.44.0"
   }
 }
