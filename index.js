@@ -1,10 +1,10 @@
 const express = require("express");
 
 const app = express();
-
-app.get("/", () => {
+app.use(express.json());
+app.get("/", (req,res) => {
     let val = 90000;
-  res.send({ msg: "welcome to cicd-example " });
+  res.send({ msg: "welcome to cicd-example ",val });
 });
 
 app.listen(4000, () => {
